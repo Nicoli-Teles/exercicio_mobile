@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/botões.css">
+    <link rel="stylesheet" href="css/card_principal.css">
+    <link rel="stylesheet" href="css/inputs.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- cabeçalho -->
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="logo"> <h3>HABIT</h3></span>
+            <nav>
+                
+                <a href="inicio.html">Início</a>
+                <a href="paginas.html">Páginas</a>
+                <a href="Destaques.html">Destaques</a>
+                <a href="assinar.html">Assinar</a>
+                <a href="admin.html">Admin</a>
+                
+
+            </nav>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <button class="btn-outline">Buscar</button>
+            <button class="btn-outline" onclick="window.location.href='login.html'">Entrar</button>
+        </div>
+    </header>
+<!-- formulário -->
+    <main class="main-container-forms">
+        <div class="login-card">
+            <h1>Criar Conta</h1>
+            <form>
+                <input type="text" id="full-name" name="full-name" placeholder="Nome completo" required autocomplete="name"class="input-field">
+                <input type="email" placeholder="E-mail" class="input-field">
+                <input type="password" placeholder="Senha" class="input-field">
+                <input type="password" placeholder="Confirmar senha" class="input-field">
+                
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Concordo com os termos e a política de privacidade</label>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-primary">Cadastrar</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+<!--    cards de redes redirecionamentos`` -->
+    <section class="categories">
+        <div class="cat-item"><strong>Instagram</strong></div>
+        <div class="cat-item"><strong>Work</strong></div>
+        <div class="cat-item"><strong>Bags</strong></div>
+        <div class="cat-item"><strong>Lamp</strong></div>
+        <div class="cat-item"><strong>Books</strong></div>
+    </section>
+
+    <!-- rodapé -->
+
+    <footer class="site-footer">
+        © 2025 Meu Site • Meu site
+    </footer>
+
+</body>
+</html>
