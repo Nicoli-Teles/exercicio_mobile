@@ -38,13 +38,3 @@
     width: 100%;
 }
 
-
-/* --- LAYOUT PRINCIPAL DO DASHBOARD --- */
-.dashboard-main {
-    background-color: var(--bg-light); /* Aproveitando sua variável do fundo */
-    padding: var(--space-xl) var(--space-lg);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Força o painel a ficar no topo */
-    width: 100%;
-}

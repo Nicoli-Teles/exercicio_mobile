@@ -1,6 +1,5 @@
 
 .content-wrapper {
-    /* Em vez de um valor fixo baixo, use um valor bem alto ou 100% */
     width: 95%; 
     max-width: 2500px; /* Agora ele só vai parar de crescer em telas gigantes */
     

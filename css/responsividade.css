@@ -91,5 +91,10 @@
         width: 100%; 
     }
     
+    .dashboard-content {
+        /* Garante que o conteúdo estique para ocupar o 1fr disponível */
+        width: 100%; 
+    }
+    
 
 }

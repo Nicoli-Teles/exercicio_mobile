@@ -43,3 +43,8 @@ nav a {
     padding: 8px;
     width: 100%;
 }
+
+.botoes-nav {
+    display: flex;       /* Alinha os botões em linha */
+    gap: 10px;           /* Cria um espaço entre os botões */
+}
