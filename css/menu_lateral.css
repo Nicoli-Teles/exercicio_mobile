@@ -42,3 +42,10 @@
 .dashboard-sidebar a:hover {
     color: var(--primary-teal); /* Seu tom de verde/teal */
 }
+
+.dashboard-sidebar a.ativo {
+  background-color: var(--border-color);
+  color: var(--primary-hover);
+  border-radius: 5px;
+  padding: 5px;
+}

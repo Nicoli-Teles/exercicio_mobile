@@ -67,8 +67,12 @@
     grid-template-columns: 1fr 2fr 1fr 120px; /* Larguras das colunas */
     background-color: var(--bg-header);
     font-weight: bold;
-    padding: 15px;
+    padding: 16px;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  .grid-header#revisão {
+  grid-template-columns: 1fr 1fr 1fr 260px;
   }
 
   /* transforma cada card em linha de tabela */
@@ -76,9 +80,13 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 120px; 
     flex-direction: row;
-    padding: 10px 15px;
+    padding: 16px 16px; /*cima/baixo e direita/esquerda*/
     border-bottom: 1px solid var(--border-color);
     align-items: center;
+  }
+
+  .grid-row#revisão {
+    grid-template-columns: 1fr 1fr 1fr 260px; 
   }
 
   /* remove os estilos de "linha de card" */
