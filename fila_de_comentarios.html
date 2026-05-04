@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gerencie seus usuários de forma eficiente.">
-    <title>Usuários</title>
+    <title>Fila de Comentários</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/botões.css">
@@ -55,9 +55,9 @@
                 <li><a href="categoria.html">Categorias</a></li>
                 <li><a href="criar_posts.html">Criar Post</a></li>
                 <li><a href="Escolhas_do_editor.html">Escolhas do Editor</a></li>
-                <li><a href="usuarios.html" class="ativo">Usuários</a></li>
+                <li><a href="usuarios.html">Usuários</a></li>
                 <li><a href="fila_de_revisao.html">Fila de revisão</a></li>
-                <li><a href="#">Fila de comentários</a></li>
+                <li><a href="fila_de_comentarios.html" class="ativo" >Fila de comentários</a></li>
             </ul>
         </aside>
         <!-- lado direito -->
@@ -83,52 +83,65 @@
             </div>
 
             <div class="panel-card">
-                <h3>Usuários</h3>
+                <h3>Fila de comentários</h3>
                 <input type="text" class="panel-search" placeholder="Buscar posts...">
                 
                 <div class="tabela-grid">
                     <!-- Cabeçalho -->
-                    <div class="grid-header">
-                        <div class="header-item">Usuário</div>
-                        <div class="header-item">E-mail</div>
+                    <div class="grid-header"id="revisão">
+                        <div class="header-item">Título</div>
+                        <div class="header-item">Autor</div>
                         <div class="header-item">Status</div>
                         <div class="header-item">Ações</div>
                     </div>
 
-                    <div class="grid-row">
-                        <div class="grid-item" data-label="Usuário">Usuário #1</div>
-                        <div class="grid-item" data-label="E-mail">email@teste.com</div>
-                        <div class="grid-item" data-label="Status"><span class="status ativo">Ativo</span></div>
-                        <div class="grid-item" data-label="Ações"><button class="btn-action">Bloquear</button></div>
+                    <div class="grid-row"id="revisão">
+                        <div class="grid-item" data-label="Título">Comentário #1</div>
+                        <div class="grid-item" data-label="Autor">Usuário 1</div>
+                        <div class="grid-item" data-label="Status">Em Revisão</div>
+                        <div class="grid-item" data-label="Ações">
+                            <button class="btn-action">Aprovar</button>
+                            <button class="btn-action">Reprovar</button>
+                        </div>
+                    </div>
+                    <div class="grid-row"id="revisão">
+                        <div class="grid-item" data-label="Título">Comentário #2</div>
+                        <div class="grid-item" data-label="Autor">Usuário 2</div>
+                        <div class="grid-item" data-label="Status">Em Revisão</div>
+                        <div class="grid-item" data-label="Ações">
+                            <button class="btn-action">Aprovar</button>
+                            <button class="btn-action">Reprovar</button> 
+                        </div>
+                    </div>
+                    <div class="grid-row"id="revisão">
+                        <div class="grid-item" data-label="Título">Comentário #3</div>
+                        <div class="grid-item" data-label="Autor">Usuário 3</div>
+                        <div class="grid-item" data-label="Status">Em Revisão</div>
+                        <div class="grid-item" data-label="Ações">
+                              <button class="btn-action">Aprovar</button>
+                              <button class="btn-action">Reprovar</button>
+                        </div>
+                    </div>
+                    <div class="grid-row"id="revisão">
+                        <div class="grid-item" data-label="Título">Comentário #4</div>
+                        <div class="grid-item" data-label="Autor">Usuário 4</div>
+                        <div class="grid-item" data-label="Status">Em Revisão</div>
+                        <div class="grid-item" data-label="Ações">
+                            <button class="btn-action">Aprovar</button>
+                            <button class="btn-action">Reprovar</button>
+                        </div>
+                    </div>
+                    <div class="grid-row"id="revisão">
+                        <div class="grid-item" data-label="Título">Comentário #5</div>
+                        <div class="grid-item" data-label="Autor">Usuário 5</div>
+                        <div class="grid-item" data-label="Status">Em Revisão</div>
+                        <div class="grid-item" data-label="Ações">
+                            <button class="btn-action">Aprovar</button>
+                            <button class="btn-action">Reprovar</button>
+                        </div>
                     </div>
 
-                    <div class="grid-row">
-                        <div class="grid-item" data-label="Usuário">Usuário #2</div>
-                        <div class="grid-item" data-label="E-mail">email@exemplo.com</div>
-                        <div class="grid-item" data-label="Status"><span class="status ativo">Ativo</span></div>
-                        <div class="grid-item" data-label="Ações"><button class="btn-action">Bloquear</button></div>
-                    </div>
-
-                    <div class="grid-row">
-                        <div class="grid-item" data-label="Usuário">Usuário #3</div>
-                        <div class="grid-item" data-label="E-mail">email@exemplo.com</div>
-                        <div class="grid-item" data-label="Status"><span class="status bloqueado">Bloqueado</span></div>
-                        <div class="grid-item" data-label="Ações"><button class="btn-action">Desbloquear</button></div>
-                    </div>
-
-                    <div class="grid-row">
-                        <div class="grid-item" data-label="Usuário">Usuário #4</div>
-                        <div class="grid-item" data-label="E-mail">email@exemplo.com</div>
-                        <div class="grid-item" data-label="Status"><span class="status ativo">Ativo</span></div>
-                        <div class="grid-item" data-label="Ações"><button class="btn-action">Bloquear</button></div>
-                    </div>
-
-                    <div class="grid-row">
-                        <div class="grid-item" data-label="Usuário">Usuário #5</div>
-                        <div class="grid-item" data-label="E-mail">email@exemplo.com</div>
-                        <div class="grid-item" data-label="Status"><span class="status ativo">Ativo</span></div>
-                        <div class="grid-item" data-label="Ações"><button class="btn-action">Bloquear</button></div>
-                    </div>
+                    
                 </div>
             </div>
             
