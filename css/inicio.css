@@ -1,0 +1,301 @@
+
+.main-home-override {
+    align-items: stretch !important;
+    background-color: var(--fundo);
+    padding: var(--space-xl) 0;
+}
+
+.wrapper-home-override {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 0 var(--space-xl); 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================================================
+   Configurações Gerais da Home
+   ========================================================================== */
+section {
+    margin-bottom: var(--space-xl);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: bold;
+    color: var(--text-main);
+    margin-bottom: var(--space-sm);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: bold;
+    margin-bottom: var(--space-md);
+    color: var(--text-main);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+    margin-bottom: calc(var(--space-xl) * 1.5);
+}
+
+.hero-text p {
+    font-size: var(--fs-body);
+    color: var(--text-muted);
+    margin-bottom: var(--space-lg);
+}
+
+/* Botões */
+.hero-buttons {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 6px;
+    font-size: var(--fs-body);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary-teal);
+    color: var(--white);
+    border: 1px solid var(--primary-teal);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-teal);
+    border: 1px solid var(--primary-teal);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-light);
+}
+
+.hero-image {
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    width: 90%;
+    height: 200px;
+}
+
+/* ==========================================================================
+   Categorias Populares (Cards Grandes)
+   ========================================================================== */
+.popular-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+}
+
+.pop-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    height: 140px;
+    padding: var(--space-lg);
+    display: flex;
+    align-items: flex-end; 
+    background-color: var(--white);
+    font-weight: bold;
+    font-size: var(--fs-body);
+    color: var(--text-main);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.pop-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* ==========================================================================
+   Todas as Categorias (Grid)
+   ========================================================================== */
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    width: 100%;
+}
+
+.tag-dashed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 64px; 
+    text-align: center;
+    border: 1px dashed var(--border-color); 
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--fs-body);
+    color: var(--text-main); 
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.tag-dashed:hover {
+    background-color: var(--bg-light);
+    border-color: var(--text-muted); 
+}
+
+/* ==========================================================================
+   Layout Dividido (Postagens x Escolhas do Editor)
+   ========================================================================== */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: var(--space-xl);
+    align-items: stretch !important; 
+}
+
+/* -- Postagens em Destaque -- */
+.horizontal-card {
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    gap: var(--space-lg);
+    background-color: var(--white);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.horizontal-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+
+.card-img-placeholder {
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    width: 100%;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.card-meta {
+    font-size: var(--fs-small);
+    color: var(--text-muted);
+    margin-bottom: var(--space-xs);
+}
+
+.horizontal-card h3 {
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.card-time {
+    font-size: var(--fs-small);
+    color: var(--text-muted);
+    margin-top: auto;
+}
+
+.horizontal-card:last-of-type {
+    margin-bottom: 0;
+}
+
+/* -- Escolhas do Editor -- */
+.escolhas-editor {
+    box-sizing: border-box; 
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--space-lg);
+    background-color: var(--white);
+    height: 100%; 
+}
+
+.escolhas-editor h3 {
+    margin-bottom: var(--space-md);
+}
+
+.editor-list {
+    padding-left: var(--space-lg);
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.editor-list li {
+    font-size: var(--fs-body);
+    margin-bottom: var(--space-sm);
+    cursor: pointer;
+}
+
+.editor-list li:hover {
+    color: var(--primary-teal);
+}
+
+/* ==========================================================================
+   Breakpoints (Tablet e Desktop)
+   ========================================================================== */
+@media (min-width: 768px) {
+    .popular-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid-categorias {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .horizontal-card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-img-placeholder {
+        width: 100px;
+        height: 100px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-image {
+        height: 100%;
+        min-height: 250px;
+    }
+
+    .split-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--space-xl);
+    }
+}

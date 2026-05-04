@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/botões.css">
+    <link rel="stylesheet" href="css/tags.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <!-- Cabeçalho Principal -->
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="logo"><h3>HABIT</h3></span>
+            <nav aria-label="Navegação principal">
+                <a href="inicio.html" aria-current="page">Início</a>
+                <a href="categoria_techno.html">Páginas</a>
+                <a href="Destaques.html">Destaques</a>
+                <a href="assinar.html">Assinar</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <label for="searchInput" class="sr-only" style="display: none;">Buscar</label>
+                <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Campo de busca">
+            </div>
+            <div class="botoes-nav">
+                <button class="btn-outline" onclick="window.location.href='pesquisa.html'">Buscar</button>
+                <button class="btn-outline" onclick="window.location.href='login.html'">Entrar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container main-home-override">
+        <div class="content-wrapper wrapper-home-override">
+            
+            <section class="hero-section">
+                <div class="hero-text">
+                    <h1 class="page-title">Navegue por tópicos de interesse</h1>
+                    <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="window.location.href='categoria_techno.html'">Explorar categorias</button>
+                        <button class="btn-outline-full" onclick="window.location.href='assinar.html'">Assine a newsletter</button>
+                    </div>
+                </div>
+                <img class="hero-image" src="assets/pesquisa/mulher-em-servidor.jpg" alt="Profissional usando capacete de segurança e óculos de proteção enquanto analisa um painel elétrico industrial com um tablet em ambiente com iluminação azul">
+            </section>
+
+            <section class="popular-section">
+                <h2>Categorias Populares</h2>
+                <div class="popular-grid">
+                    <article class="pop-card">
+                        <strong>Work</strong>
+                    </article>
+                    <article class="pop-card">
+                        <strong>Books</strong>
+                    </article>
+                    <article class="pop-card">
+                        <strong>Techno</strong>
+                    </article>
+                </div>
+            </section>
+
+            <section class="all-categories-section">
+                <h2>Todas as Categorias</h2>
+                <div class="grid-categorias">
+                    <button class="filter-tag tag-dashed">Negócios</button>
+                    <button class="filter-tag tag-dashed">Techno</button>
+                    <button class="filter-tag tag-dashed">Produtividade</button>
+                    <button class="filter-tag tag-dashed">Filmes</button>
+                    <button class="filter-tag tag-dashed">Lifestyle</button>
+                    <button class="filter-tag tag-dashed">Educação</button>
+                    <button class="filter-tag tag-dashed">Mailing</button>
+                    <button class="filter-tag tag-dashed">eCommerce</button>
+                    <button class="filter-tag tag-dashed">Alimentação</button>
+                    <button class="filter-tag tag-dashed">Social</button>
+                </div>
+            </section>
+
+            <div class="split-layout">
+                
+                <section class="postagens-destaque">
+                    <h2>Postagens em Destaque</h2>
+                    
+                    <article class="horizontal-card">
+                        <img class="card-img-placeholder" src="assets/pesquisa/erro-design.jpg" alt="Ilustração de várias janelas de navegador com símbolos de bloqueio de anúncios, incluindo texto 'Ad Block', ícones de proibição, alertas e anúncios sendo bloqueados em fundo amarelo">
+                        <div class="card-content">
+                            <span class="card-meta">31 Jul 2025 • Destaque</span>
+                            <h3>Erros de Design que Todos Devem Evitar</h3>
+                            <span class="card-time">3 min de leitura</span>
+                        </div>
+                    </article>
+
+                    <article class="horizontal-card">
+                        <img class="card-img-placeholder" src="assets/pesquisa/grandes-empresas.png" alt="Homem com barba e óculos, vestindo camisa social, utilizando um notebook enquanto está apoiado em uma parede externa de um prédio moderno">
+                        <div class="card-content">
+                            <span class="card-meta">31 Jul 2025 • Destaque</span>
+                            <h3>As Maiores Empresas por Receita</h3>
+                        </div>
+                    </article>
+                </section>
+
+                <aside class="escolhas-editor">
+                    <h2>Escolhas do Editor</h2>
+                    <ul class="editor-list">
+                        <li>O uso negativo da internet</li>
+                        <li>O segredo do brainstorm</li>
+                        <li>Escalar para pequenos negócios</li>
+                        <li>O futuro do trabalho remoto</li>
+                    </ul>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="categories" aria-label="Navegação rápida de categorias">
+        <div class="cat-item"><strong>Instagram</strong></div>
+        <div class="cat-item"><strong>Work</strong></div>
+        <div class="cat-item"><strong>Bags</strong></div>
+        <div class="cat-item"><strong>Lamp</strong></div>
+        <div class="cat-item"><strong>Books</strong></div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2025 Meu Site • Meu site</p>
+    </footer>
+</body>
+</html>
