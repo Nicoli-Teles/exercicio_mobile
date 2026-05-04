@@ -47,13 +47,11 @@
         gap: var(--space-md);
     }
 
+    
+
 
 }
 
-    .highlights-grid {
-            
-            grid-template-columns: 1fr;
-        }
 
 /* Desktops (≥ 1024px) */
 @media (min-width: 1024px) {
@@ -77,10 +75,6 @@
     .site-footer {
         text-align: start;
     }
-    .highlights-grid {
-            
-            grid-template-columns: repeat(2, 1fr);
-        }
 
     .dashboard-wrapper {
         max-width: 95%; /* Ocupa quase a tela toda */
@@ -95,6 +89,10 @@
         /* Garante que o conteúdo estique para ocupar o 1fr disponível */
         width: 100%; 
     }
+
+
+
+    
     
 
 }
