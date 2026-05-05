@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABIT - Perfil</title>
+    <!-- Inclua aqui as referências para os seus arquivos CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/botões.css">
+    <link rel="stylesheet" href="css/inputs.css">
+    <link rel="stylesheet" href="css/tags.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/perfil.css"> <!-- Novo CSS exclusivo desta página -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="logo"><h3>HABIT</h3></span>
+            <nav aria-label="Navegação principal">
+                <a href="inicio.html">Início</a>
+                <a href="categoria_techno.html">Páginas</a>
+                <a href="Destaques.html">Destaques</a>
+                <a href="assinar.html">Assinar</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <label for="searchInput" style="display: none;">Buscar</label>
+                <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Campo de busca">
+            </div>
+            <div class="botoes-nav">
+                <button class="btn-outline" onclick="window.location.href='pesquisa.html'">Buscar</button>
+                <button class="btn-outline" onclick="window.location.href='login.html'">Entrar</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-container">
+        <div class="perfil-layout">
+            
+            <!-- Coluna da Esquerda: Edição de Perfil -->
+            <aside class="perfil-sidebar" aria-labelledby="perfil-heading">
+                <h2 id="perfil-heading">Perfil</h2>
+                
+                <!-- Placeholder da foto de perfil -->
+                <img class="perfil-avatar" src="assets/pesquisa/perfil.png" alt="Notebook exibindo gráficos financeiros.">
+                
+                <form action="#" method="POST" class="perfil-form">
+                    <label for="nome" style="display: none;">Nome</label>
+                    <input type="text" id="nome" class="input-field" placeholder="Nome" aria-label="Nome completo">
+                    
+                    <label for="bio" style="display: none;">Bio</label>
+                    <input type="text" id="bio" class="input-field" placeholder="Bio" aria-label="Biografia">
+                    
+                    <button type="submit" class="btn-primary btn-salvar">Salvar</button>
+                </form>
+            </aside>
+
+            <!-- Coluna da Direita: Lista de Postagens -->
+            <section class="perfil-content" aria-labelledby="postagens-heading">
+                <h2 id="postagens-heading">Suas Postagens</h2>
+                
+                <div class="postagens-lista">
+                    <!-- Card 1 -->
+                    <article class="post-horizontal-card">
+                        <img class="post-img" src="assets/pesquisa/post-1.png" alt="Capa do Post 1">
+                        <div class="post-info">
+                            <span class="post-status">Rascunho</span>
+                            <h3>Post 1</h3>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="post-horizontal-card">
+                        <img class="post-img" src="assets/pesquisa/post-2.png" alt="Capa do Post 2">
+                        <div class="post-info">
+                            <span class="post-status">Publicado</span>
+                            <h3>Post 2</h3>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="post-horizontal-card">
+                        <img class="post-img" src="assets/pesquisa/comentario-1.png" alt="Exemplo de comentário modo claro">
+                        <div class="post-info">
+                            <span class="post-status">Em análise</span>
+                            <h3>Comentário 1</h3>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="post-horizontal-card">
+                        <img class="post-img" src="assets/pesquisa/comentario-2.png" alt="Exemplo de comentário modo escuro">
+                        <div class="post-info">
+                            <span class="post-status">Publicado</span>
+                            <h3>Comentário 2</h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Navegação de Categorias Rodapé -->
+    <section class="categories" aria-label="Categorias em destaque">
+        <div class="cat-item"><strong>Instagram</strong></div>
+        <div class="cat-item"><strong>Work</strong></div>
+        <div class="cat-item"><strong>Bags</strong></div>
+        <div class="cat-item"><strong>Lamp</strong></div>
+        <div class="cat-item"><strong>Books</strong></div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>© 2025 Meu Site • Meu site</p>
+    </footer>
+</body>
+</html>
